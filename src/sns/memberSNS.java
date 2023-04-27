@@ -1,5 +1,6 @@
 package sns;
-
+//김은복
+//게시판 기능
 public class memberSNS {
 	String name;
 	public void sns() {
