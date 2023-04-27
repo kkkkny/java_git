@@ -2,9 +2,12 @@ package main;
 
 import java.util.Scanner;
 
+import member.MemberService;
+
 public class MainClass {
 	public static void main(String[] args) {
 		Scanner scan = new Scanner(System.in);
+		MemberService mem = new MemberService();
 		int num;
 		while(true) {
 			System.out.println("1. 로그인 기능");
@@ -15,6 +18,7 @@ public class MainClass {
 			case 1:
 				break;
 			case 2:
+				mem.memberInput();
 				break;
 			case 3:
 				break;
