@@ -6,8 +6,8 @@ import member.MemberService;
 
 public class LoginService {
 	   public void log () {
-		   MemberService mem = new MemberService();
-	   
+		   
+		   System.out.println(mem.getId());
 	      Scanner scan = new Scanner(System.in);
 	      System.out.println("아이디를 입력해주세요 ");
 	      System.out.print(">>>>");
@@ -15,8 +15,9 @@ public class LoginService {
 	      System.out.println("비밀번호 입력해주세요 ");
 	      System.out.print(">>>>");
 	      String pwd1 = scan.next();
-	      System.out.println(mem.id);
-	      if(mem.id.contains(name)) {
+	      
+	      System.out.println(mem.getId());
+	      if(mem.getId().contains(name)) {
 	    	  if(mem.pwd.contains(pwd1)){
 	 	    	 System.out.println("ㅎㅇ");
 	    	  }
