@@ -6,8 +6,8 @@ import java.util.Scanner;
 public class MemberService {
    
    Scanner input = new Scanner(System.in);
-   ArrayList<String> id = new ArrayList<String>();
-   ArrayList<String> pwd = new ArrayList<String>();
+   public ArrayList<String> id = new ArrayList<String>();
+   public ArrayList<String> pwd = new ArrayList<String>();
    String inputid=null, inputpwd=null;
 
    public void memberInput() {      
