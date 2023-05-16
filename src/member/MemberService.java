@@ -9,9 +9,9 @@ public class MemberService {
    
    Scanner input = new Scanner(System.in);
    String inputid=null, inputpwd=null;
-   memberDTO dto = new memberDTO(); 
 
-   public void memberInput() {
+
+   public void memberInput(memberDTO dto) {
 	  ArrayList<String> inputid = new ArrayList<>(); 
 	  ArrayList<String> inputpwd = new ArrayList<>(); 
       System.out.print("아이디를 입력해주세요: ");
@@ -26,9 +26,9 @@ public class MemberService {
           System.out.println("중복된 비밀번호입니다.");
        }
        else {
-        dto.setId();
-        this.pwd.add(pwd);
-        System.out.println(getId());
+        dto.setId(id);
+        dto.setPwd(pwd);
+        System.out.println(dto.getId());
        }
        System.out.println("등록되었습니다.");
    }

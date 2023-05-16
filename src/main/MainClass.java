@@ -10,6 +10,7 @@ public class MainClass {
 		Scanner scan = new Scanner(System.in);
 		MemberService mem = new MemberService();
 		LoginService log = new LoginService();
+		memberDTO dto = new memberDTO(); 
 		int num;
 		while(true) {
 			System.out.println("1. 로그인 기능");
@@ -18,10 +19,10 @@ public class MainClass {
 			num = scan.nextInt();
 			switch(num) {
 			case 1:
-				log.log();
+				log.log(dto);
 				break;
 			case 2:
-				mem.memberInput();
+				mem.memberInput(dto);
 				break;
 			case 3:
 				break;
